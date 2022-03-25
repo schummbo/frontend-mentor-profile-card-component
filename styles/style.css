@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    background: url('../images/bg-pattern-top.svg'), url('../images/bg-pattern-bottom.svg');
+    background-position: left -125% top 150%, right -100% bottom 175%;
+    background-repeat: no-repeat, no-repeat;
+    background-color: hsl(185, 75%, 39%);
+    font-size: 13px;
+    font-family: 'Kumbh Sans';
+    color:hsl(0, 0%, 59%);
+    font-weight: 400;
+}
+
+main {
+    width: 350px;
+    height: 350px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr .7fr .7fr 1fr 1.2fr;
+
+    justify-items: center;
+    align-items: center;
+
+    background-image: url('../images/bg-pattern-card.svg');
+    background-repeat: no-repeat;
+    background-color: white;
+
+    border-radius: 20px;
+}
+
+#user-image {
+    border-radius: 50%;
+    border: 5px solid white;
+    grid-row: 2/4;
+    background-color: white;
+}
+
+#user-profile {
+    grid-row: 4;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#name {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: black;
+}
+
+#age {
+    justify-self: flex-start;
+
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+#location {
+    margin: 1rem;
+}
+
+#location {
+    width: 100%
+}
+
+#stats-container {  
+    grid-row: 5;  
+    justify-self: stretch;
+    align-self: stretch;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    border-top: 1px solid  hsl(0, 0%, 59%);
+}
+
+#stats-container > div {
+    flex: 1;
+}
+
+.stat-num {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: black;
+}
